@@ -100,7 +100,7 @@
 	font-family: "BPG WEB 001";
 	font-size: 20px;
 	width: 78%;
-	text-align: left !important;
+	text-align: left;
 }
 /*Genre List*/
 .genre-list {
