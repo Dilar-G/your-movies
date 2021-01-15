@@ -84,37 +84,39 @@
   
 
 /*Genre Wrapper*/
-.genre-wrapper{
-	display: flex;
-	width:100%;
-	justify-content: flex-start;
-	align-items: center;
-	flex-direction: column;
-	margin-top:20px;
+.genre-wrapper {
+    max-width: 100%;
+    display: flex;
+    width: 1350px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
 }
 /*Genre Title*/
 .genre-wrapper span:nth-child(1){	
+	/* overflow: scroll; */
 	color:#FEE715FF;
 	font-family: "BPG WEB 001";
 	font-size: 20px;
-	width:78%;
-	text-align: left;
+	width: 78%;
+	text-align: left !important;
 }
 /*Genre List*/
-.genre-list{
-	margin-top:20px;
-	display: flex;
-	width:78%;
-	flex-direction: row;
-	justify-content: flex-start;
-	overflow-x: hidden;
-	scroll-behavior: smooth;
-	align-items: center;
+.genre-list {
+    margin-top: 20px;
+    display: flex;
+    width: 78%;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    align-items: center;
 }
-.movie-scroll-wrapper{
-	width: 78%;
-	display:flex;
-	justify-content:flex-start;
+.movie-scroll-wrapper {
+    width: 78%;
+    display: flex;
+    justify-content: flex-start;
 }
 
   /*mini responsive*/
