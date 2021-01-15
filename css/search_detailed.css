@@ -1,0 +1,154 @@
+.detailed-search-body-wrapper{
+	width:100%;
+	display: flex;
+	justify-content: center;
+}
+.form-wrapper{
+	display: flex;
+	width:50%;
+	height: auto;
+	background: linear-gradient(to bottom,#00203FFF, #195190FF);
+	justify-content: center;
+	align-items: flex-start;
+	border-radius: 0px 0px 20px 20px;
+}
+.search-form{
+	padding:30px;
+	width:100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: left;
+}
+.search-term, .filter-wrapper{
+	width:100%;
+}
+.search-form span{
+	width:100%;
+	text-align: left;
+	font-family: "BPG Arial";
+	font-size: 20px;
+	margin-bottom:10px;
+	color:white;
+}
+.search-form input{
+	border:none;
+	border-radius: 5px;
+	width:70%;
+	height: 40px;
+}
+.filter-wrapper{
+	width:100%;
+	flex-wrap: wrap;
+	margin-top:10px;
+	justify-content: space-between;
+	display: flex;
+}
+.filter-single{
+	width:100px;
+	display: flex;
+	flex-direction: column;
+}
+.filter-single label{
+	font-family: "BPG Arial";
+	font-size: 15px;
+	color:white;
+	margin-bottom: 5px;
+}
+.filter-single select{
+	border:none;
+	border-radius: 5px;
+	width:100px;
+	height: 30px;
+}
+.search-button-wrapper{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin-top:20px;
+}
+.search-term button{
+	height: 38px;
+	font-family: "BPG Web 001";
+	background: #3d58a6;
+	color:white;
+	font-size: 18px;
+	border-radius: 5px;
+	margin-left: 20px;
+	border:none;
+	width:25%;
+}
+
+
+
+.pagination{
+	display: flex;
+	flex-wrap: wrap;
+	width:100%;
+	margin-top:20px;
+	display: flex;
+	justify-content: center;
+}
+.page-list{
+	width:90%;
+	flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.single-page{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:40px;
+	height: 40px;
+	color:white;
+	vertical-align: middle;
+	font-family: "Roboto";
+	font-weight: 700;
+	border:1px solid #055479;
+}
+.single-page:hover{
+	background: #65b1e2;
+	cursor: pointer;
+}
+.detailed-search-movie-body{
+	display: flex;
+	justify-content: center;
+}
+.detailed-search-movies{
+	width:100%;
+	justify-content: center;
+	margin-top:20px;
+	padding: 30px;
+	border:2px solid #1d3650;
+	border-radius: 5px;
+	display: flex;
+	width: 70%;
+}
+
+@media only screen and (max-width:1080px){
+	.search-term{
+		justify-content: center;
+	}
+	.search-term input{
+		width:100%;
+	}
+	.search-term button{
+		width:100%;
+		margin:0;
+		margin-top:5px;
+	}
+}
+@media only screen and (max-width:550px){
+	.filter-wrapper{
+		justify-content: center;
+	}
+	.search-form span{
+		text-align: center;
+	}
+	.search-form label{
+		text-align: center;
+	}
+}

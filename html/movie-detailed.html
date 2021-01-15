@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loading...</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/movie-detailed.css">
+	<link rel="stylesheet" type="text/css" href="../css/single-movie.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../css/navbar.css">
+	<link rel="stylesheet" href="../fonts/css/alk-rex-bold.min.css">
+	<link rel="stylesheet" href="../fonts/css/bpg-arial.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- BG Image -->
+	<div class = 'main-background'>
+	</div>
+	<img id="background" class = 'main-bg' src="">
+	<!-- BG Image -->
+
+	<nav class = 'navbar'>
+		<!-- LOGO -->
+		<!-- <div class = 'logo'> -->
+			<a href="index.html" class="logo">
+				<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="slack" class="svg-inline--fa fa-slack fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"></path></svg>
+			</a>
+		<!-- </div> -->
+		<!-- LOGO -->
+		<ul class = 'navbar-ul'>
+			<!-- MAIN TITLE -->
+			<li class ='nav-title'>
+				<a href="index.html">Your-Movies</a>
+			</li>
+			<!-- MAIN TITLE -->
+				<!-- SEARCH -->
+			<li class = 'nav-search'>
+				<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>
+				<input id="searchInput" type="" name="" placeholder="სწრაფი ძიება">
+				<!-- HIDDEN SEARCH RESULTS -->
+				<ul id="searchResults" class = 'search-results-ul'>
+
+				</ul>
+				<!-- HIDDEN SEARCH RESULTS -->
+			</li>
+				<!-- SEARCH -->
+
+				<!-- NAV ITEMS -->
+				<li class = 'nav-item'>
+					<a href="search_detailed.html" class = 'nav-link'>ფილმები</a>
+				</li>
+				<li class = 'nav-item'>
+					<a href="#" class = 'nav-link'>სერიალები</a>
+				</li>
+				<li class = 'nav-item'>
+					<a href="#" class = 'nav-link'>ფესტივალები</a>
+				</li>
+				<li class = 'nav-item'>
+					<a href="#" class = 'nav-link'>პერსონაჟები</a>
+				</li>
+				<!-- NAV ITEMS -->
+
+				<!-- RESPONSIVE NAV ITEMS -->
+
+			<div class = 'navbar-responsive'>
+				<li>
+					<a href="">
+						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="film" class="svg-inline--fa fa-film fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M488 64h-8v20c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12V64H96v20c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12V64h-8C10.7 64 0 74.7 0 88v336c0 13.3 10.7 24 24 24h8v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h320v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h8c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM96 372c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm272 208c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm0-168c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm112 152c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40z"></path></svg>				
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="theater-masks" class="svg-inline--fa fa-theater-masks fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+						<path fill="currentColor" d="M206.86 245.15c-35.88 10.45-59.95 41.2-57.53 74.1 11.4-12.72 28.81-23.7 49.9-30.92l7.63-43.18zM95.81 295L64.08 115.49c-.29-1.62.28-2.62.24-2.65 57.76-32.06 123.12-49.01 189.01-49.01 1.61 0 3.23.17 4.85.19 13.95-13.47 31.73-22.83 51.59-26 18.89-3.02 38.05-4.55 57.18-5.32-9.99-13.95-24.48-24.23-41.77-27C301.27 1.89 277.24 0 253.32 0 176.66 0 101.02 19.42 33.2 57.06 9.03 70.48-3.92 98.48 1.05 126.58l31.73 179.51c14.23 80.52 136.33 142.08 204.45 142.08 3.59 0 6.75-.46 10.01-.8-13.52-17.08-28.94-40.48-39.5-67.58-47.61-12.98-106.06-51.62-111.93-84.79zm97.55-137.46c-.73-4.12-2.23-7.87-4.07-11.4-8.25 8.91-20.67 15.75-35.32 18.32-14.65 2.58-28.67.4-39.48-5.17-.52 3.94-.64 7.98.09 12.1 3.84 21.7 24.58 36.19 46.34 32.37 21.75-3.82 36.28-24.52 32.44-46.22zM606.8 120.9c-88.98-49.38-191.43-67.41-291.98-51.35-27.31 4.36-49.08 26.26-54.04 54.36l-31.73 179.51c-15.39 87.05 95.28 196.27 158.31 207.35 63.03 11.09 204.47-53.79 219.86-140.84l31.73-179.51c4.97-28.11-7.98-56.11-32.15-69.52zm-273.24 96.8c3.84-21.7 24.58-36.19 46.34-32.36 21.76 3.83 36.28 24.52 32.45 46.22-.73 4.12-2.23 7.87-4.07 11.4-8.25-8.91-20.67-15.75-35.32-18.32-14.65-2.58-28.67-.4-39.48 5.17-.53-3.95-.65-7.99.08-12.11zm70.47 198.76c-55.68-9.79-93.52-59.27-89.04-112.9 20.6 25.54 56.21 46.17 99.49 53.78 43.28 7.61 83.82.37 111.93-16.6-14.18 51.94-66.71 85.51-122.38 75.72zm130.3-151.34c-8.25-8.91-20.68-15.75-35.33-18.32-14.65-2.58-28.67-.4-39.48 5.17-.52-3.94-.64-7.98.09-12.1 3.84-21.7 24.58-36.19 46.34-32.37 21.75 3.83 36.28 24.52 32.45 46.22-.73 4.13-2.23 7.88-4.07 11.4z">
+						</path>
+					</svg>				
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ghost" class="svg-inline--fa fa-ghost fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M186.1.09C81.01 3.24 0 94.92 0 200.05v263.92c0 14.26 17.23 21.39 27.31 11.31l24.92-18.53c6.66-4.95 16-3.99 21.51 2.21l42.95 48.35c6.25 6.25 16.38 6.25 22.63 0l40.72-45.85c6.37-7.17 17.56-7.17 23.92 0l40.72 45.85c6.25 6.25 16.38 6.25 22.63 0l42.95-48.35c5.51-6.2 14.85-7.17 21.51-2.21l24.92 18.53c10.08 10.08 27.31 2.94 27.31-11.31V192C384 84 294.83-3.17 186.1.09zM128 224c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm128 0c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z"></path></svg>						
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-circle" class="svg-inline--fa fa-user-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"></path></svg>				
+					</a>
+				</li>
+			</div>
+				<!-- RESPONSIVE NAV ITEMS -->
+
+		</ul>
+	</nav>
+
+	<div id="body" class = 'detailed-body-wrapper'>
+		<div class = 'main-body-wrapper'>
+			<div class = 'movie-header'>
+				<div class = 'top-details'>
+					<!-- TOP LEFT -->
+					<div class = 'card-left'>
+						<img id="cover" src="../images/loading.gif">
+						<a id="imdbLink" target="_blank">IMDb-ზე ნახვა</a>
+					</div>
+					<!-- TOP LEFT -->
+
+					<!-- TOP RIGHT -->
+					<div class = 'card-right'>
+						<span id="title">...</span>
+						<span id="year">...</span>
+						<p id="genres"></p>
+						<div class = 'movie-details'>
+							<span>ფილმის აღწერა:</span>
+							<p id="description">...</p>
+							<div class = 'available-in'>
+								<span>ჩაიწერე / უყურე:</span>
+								<div id="links" class = 'available-buttons'>
+
+								</div>
+							</div>
+							<div class = 'ratings'>
+								<div class = 'rating-imdb'>
+									<p id="imdb">IMDb: ... ☆</p>
+								</div>
+								<div class = 'ratings-likes'>
+									<p id="likes">♥ Likes: ...</p>
+								</div>
+								<p id="runtime"> ხანგრძლივობა: ...</p>
+							</div>
+						</div>
+					</div>
+					<!-- TOP RIGHT -->
+					<!-- ACTORS -->
+					<div class = 'actors'>
+						<span>მსახიობები:</span>
+						<div id="actors" class = 'actors-list'>
+
+						</div>
+					</div>
+					<!-- ACTORS -->
+					<!-- GALLERY -->
+				</div>
+				<div class = 'gallery'>
+					<div class = 'gallery-images'>
+						<div class = 'horizontal-images'>
+							<img id="img1" src="">
+							<img id="img2" src="">
+							<img id="img3" src="">
+						</div>
+					</div>
+				</div>
+					<!-- GALLERY -->
+					
+					<!-- VIDEO -->
+				<div class = 'video-wrapper'>
+					<span>ტრეილერი:</span>
+					<div class = 'video-player'>
+						<iframe id="ytplayer" name="ytplayer" type="text/html" width="640" height="360"
+						  frameborder="0" allow="accelerometer; gyroscope; picture-in-picture" allowfullscreen>
+					  	</iframe>							
+					</div>
+				</div>
+					<!-- VIDEO -->
+			</div>
+			<!-- SIMILAR MOVIES WRAPPER -->
+			<div class = 'movie-wrapper'>
+				<span>მსგავსი ფილმები:</span>
+				<!-- SINGLE MOVIE WRAPPER -->
+				<div id="suggestions" class = 'movie-single-wrapper'>
+
+				</div>
+				<!-- SINGLE MOVIE WRAPPER -->
+			</div>
+			<!-- SIMILAR MOVIES WRAPPER -->
+						<!-- COMMENTS -->
+						<div id="comments" class = 'comment-wrapper'>
+							<span>კომენტარები:</span>
+
+						</div>
+						<!-- COMMENTS -->
+		</div>
+	</div>
+	<script src="../javascript/main.js"></script>
+	<script type="text/javascript">
+
+	const title = document.getElementById('title');
+	const year = document.getElementById('year');
+	const description = document.getElementById('description');
+	const cover = document.getElementById('cover');
+	const background = document.getElementById('background');
+	const ytplayer = document.getElementById('ytplayer');
+	const imdbLink = document.getElementById('imdbLink');
+	const imdb = document.getElementById('imdb');
+	const likes = document.getElementById('likes');
+	const runtime = document.getElementById('runtime');
+	const comments = document.getElementById('comments');
+	const actors = document.getElementById('actors');
+	const img1 = document.getElementById('img1');
+	const img2 = document.getElementById('img2');
+	const img3 = document.getElementById('img3');
+	const links = document.getElementById('links');
+	const genres = document.getElementById('genres');
+	const suggestions = document.getElementById('suggestions');
+
+	
+	const queryString = window.location.search;
+	const urlParams = new URLSearchParams(queryString);
+	const movie_id = urlParams.get('movie_id')
+
+		function getData(){
+			function render(){
+				let response = this.responseText;
+				let movie = JSON.parse(response).data.movie;
+				document.title = movie.slug;
+				title.innerText = movie.title;
+				year.innerText = movie.year;
+				description.innerText = movie.description_full;
+				cover.src = movie.medium_cover_image;
+				background.src = movie.background_image_original;
+				ytplayer.src = 'https://www.youtube.com/embed/' + movie.yt_trailer_code + '?autoplay=0';
+				imdb.innerText = '|IMDb: ' + movie.rating + '☆|';
+				imdbLink.href = 'https://www.imdb.com/title/' + movie.imdb_code;
+				likes.innerText = '|♥ Likes: ' + movie.like_count + '|';
+				runtime.innerText = '|ხანგრძლივობა: ' + movie.runtime + 'წთ.|';
+				img1.src = movie.large_screenshot_image1;
+				img2.src = movie.large_screenshot_image2;
+				img3.src = movie.large_screenshot_image3;
+				if(typeof movie.genres !== 'undefined'){genres.innerText = movie.genres.join(" / ");}
+
+				let actorsFragment = document.createDocumentFragment();
+				if(typeof movie.cast !== 'undefined'){
+					movie.cast.forEach(actor => {
+						let box = document.createElement('div');
+						let img = document.createElement('img');
+						let properties = document.createElement('div');
+						let link = document.createElement('a');
+						let character = document.createElement('span');
+
+						box.appendChild(img);
+						box.appendChild(properties);
+						properties.appendChild(link);
+						properties.appendChild(character);
+
+						box.className = 'single-actor';
+						properties.className = 'single-actor-properties';
+
+						if(typeof actor.url_small_image !== 'undefined'){ img.src = actor.url_small_image }
+						link.innerText = actor.name;
+						link.href = 'https://www.imdb.com/name/nm' + actor.imdb_code;
+						character.innerText = actor.character_name;
+
+						actorsFragment.appendChild(box);
+					});
+				}
+				actors.appendChild(actorsFragment);
+
+				let fragment = document.createDocumentFragment();
+				movie.torrents.forEach(el => {
+					let a = document.createElement('a');
+					let b = document.createElement('button');
+					b.textContent = el.quality + ' ' + el.type;
+					a.href = el.url;
+					a.style.margin = '5px';
+					b.style.cursor = 'pointer';
+					b.title = 'ტორენტი:' + '\n' + el.size + '\n' + 'P/S: ' + el.peers + '/' + el.seeds;
+					a.append(b);
+					fragment.appendChild(a);
+				
+				});
+				movie.torrents.forEach(el => {
+					let a = document.createElement('a');
+					let b = document.createElement('button');
+					b.textContent = el.quality + ' ' + el.type;
+					a.style.margin = '5px';
+					a.href = 'https://ferrolho.github.io/magnet-player/#' + el.url;
+					b.title = 'ყურება:' + '\n' + el.size + '\n' + 'P/S: ' + el.peers + '/' + el.seeds;
+					a.append(b);
+					a.target = '_blank';
+					b.style.cursor = 'pointer';
+					b.style.backgroundColor = '#fed700';
+					fragment.appendChild(a);
+				
+				});
+				links.append(fragment);
+
+			}
+			let req = new XMLHttpRequest();
+			req.addEventListener('load', render);
+			req.open('GET','https://yts.mx/api/v2/movie_details.json?movie_id=' + movie_id + '&with_images=true&with_cast=true');
+			req.send();          
+		}
+		function getComments(){
+			function render(){
+				let response = this.responseText;
+				comments.innerHTML += response;
+			}
+			let req = new XMLHttpRequest();
+			req.addEventListener('load', render);
+			req.open('GET','https://yts.mx/ajax/comments/' + movie_id + '?offset=0');
+			req.send();          
+		}
+		function getSuggestions(){
+			function render(){
+				let response = this.responseText;
+				let movies = JSON.parse(response).data.movies;
+
+				let fragment = document.createDocumentFragment();
+				movies.forEach(el => {
+					let main_div = document.createElement('div');
+					let img_wrapper = document.createElement('a');
+					let properties = document.createElement('div');
+					let img = document.createElement('img');
+					let star = document.createElement('span');
+					let rating = document.createElement('span');
+					let category = document.createElement('span');
+					let btn = document.createElement('button');
+					let title = document.createElement('span');
+					let year = document.createElement('p');
+
+					main_div.className = 'movie-single';
+					img_wrapper.className = 'movie-single-img-wrapper';
+					properties.className = 'movie-single-properties';
+					star.className = 'movie-single-star';
+					rating.className = 'movie-single-rating';
+					category.className = 'movie-single-category';
+					btn.className = 'movie-single-button';
+					img_wrapper.href = 'movie-detailed.html?movie_id=' + el.id;
+
+					main_div.appendChild(img_wrapper);
+					main_div.appendChild(properties);
+					img_wrapper.appendChild(img);
+					img_wrapper.appendChild(star);
+					img_wrapper.appendChild(rating);
+					img_wrapper.appendChild(category);
+					img_wrapper.appendChild(btn);
+					properties.appendChild(title);
+					properties.appendChild(year);
+
+					img.alt = el.title_long
+
+					img.src = el.medium_cover_image;
+					rating.innerText = el.rating + '/10';
+					category.innerText = el.category;
+					star.innerText = '★';
+					btn.innerText = 'სრულად ნახვა';
+					if(typeof el.genres !== 'undefined'){category.innerText = el.genres.join(" / ");}
+					title.innerText = el.title;
+					year.innerText = el.year;
+
+					fragment.appendChild(main_div);
+				});
+				suggestions.appendChild(fragment);
+
+			}
+			let req = new XMLHttpRequest();
+			req.addEventListener('load', render);
+			req.open('GET','https://yts.mx/api/v2/movie_suggestions.json?movie_id=' + movie_id);
+			req.send();       
+
+		}
+
+		getData();
+		getComments();
+		getSuggestions()
+
+
+	</script>
+
+</body>
+</html>
