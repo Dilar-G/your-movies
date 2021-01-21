@@ -24,7 +24,9 @@ form input{
 	font-weight: 700;
 	border:0;
 }
-form button{
+form button,a{
+	text-align: center;
+	cursor: pointer;
 	font-family: "BPG Arial";
 	font-weight: bold;
 	padding: 12px;
@@ -37,6 +39,10 @@ form button{
 
 }
 form button:hover{
+	background: #08649e;
+	transition: .5s ease;
+}
+form a:hover{
 	background: #08649e;
 	transition: .5s ease;
 }
@@ -85,6 +91,7 @@ form button:hover{
 	font-size: 150%;
 }
 .small-card-button{
+	cursor: pointer;
 	margin-top:5%;
 	font-family: "BPG Arial";
 	font-weight: bold;

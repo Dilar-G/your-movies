@@ -11,6 +11,13 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        .error-text {
+            color: red;
+			font-size: 20px; 
+			padding: 5px;
+        }
+    </style>
 </head>
 <body>
 	<div class = 'main-wrapper'>
@@ -22,8 +29,10 @@
 					<button class = 'small-card-button' style = 'margin:0;padding:0; outline:none !important;display:none;'id = 'joinus_small'>შემოგვიერთდი</button>
 					<form>
 						<input type="text" placeholder = 'მომხმარებელი' name = "">
-						<input type="password" name="" placeholder="">
-						<button>შესვლა</button>
+						<input type="password" name="" placeholder="პაროლი">
+						<button id="logIn" style = 'width:80%'>შესვლა</button>
+						<br>
+						<a href="index.html" style = 'width:80%'>უკან</a>
 					</form>
 				</div>
 				<div class = 'login-right'>
@@ -41,13 +50,22 @@
 					<p class = 'small-card-p'>მაშინ გაიარე ავტორიზაცია:</p>
 					<button class = 'small-card-button' id = 'logincard'>ავტორიზაცია</button>
 				</div>
-				<div class = 'register-right'>
+				<div class = 'register-right' id="registration">
 					<span>რეგისტრაცია</span>
 					<button class = 'small-card-button' id = 'logincard_small' style = 'margin:0;padding:0; outline:none !important;display:none'>ავტორიზაცია</button>
-					<form>
-						<input type="text" placeholder = 'მომხმარებელი' name = "">
-						<input type="password" name="" placeholder="">
+					<form id="registration" action="index.html">
+						<div class="error-text" id="error_username"></div>
+						<input type="text" placeholder = 'მომხმარებელი' name="username">
+
+						<div class="error-text" id="error_password1"></div>
+						<input type="password" placeholder="პაროლი" name="password1">
+
+						<div class="error-text" id="error_password2"></div>  
+						<input type="password" placeholder="გაიმეორეთ პაროლი" name="password2">
+
 						<button style = 'width:80%'>რეგისტრაცია</button>
+						<br>
+						<a href="index.html" style = 'width:80%'>უკან</a>
 					</form>
 				</div>
 			</div>
@@ -55,6 +73,49 @@
 
 		</div>
 	</div>
+	
+<script>
+    document.getElementById('registration').addEventListener('submit', function(event){
+        event.preventDefault();
+        let errors = {};
+        let form = event.target;
+        // console.log(form);
+        //Username
+        let username = form.querySelector('[name="username"]').value;
+        // let username = form.querySelector('#id');
+        if (username.length < 4 ) {
+            errors.username = "მინიმუმ 4 სიმბოლო!";
+        }
+        //Passwords
+        let password1 = form.querySelector('[name="password1"]').value;
+        let password2 = form.querySelector('[name="password2"]').value;
+        if (password1.length < 5) {
+            errors.password1 = "მინიმუმ 4 სიმბოლო!";
+        }
+        if (password1 != password2 ) {
+            errors.password1 = "პაროლები არ ემთხვევა";
+        }
+
+        form.querySelectorAll('.error-text').forEach(item => {
+            item.textContent = ' ';
+        });
+        for (let name in errors) {
+            let errorPlaceholder = document.getElementById('error_' + name);
+            if (errorPlaceholder) {
+                errorPlaceholder.textContent = errors[name];
+            }
+        }
+        if (Object.keys(errors).length === 0) {
+			alert('თქვენ წარმატებით გაიარეთ რეგისრაცია');
+			form.submit();
+        }
+        console.log(errors);
+	});
+	
+
+
+</script>
+
 <script type="text/javascript">
 	card_register = document.getElementById('card-register');
 	btn_joinus = document.getElementById('joinus');

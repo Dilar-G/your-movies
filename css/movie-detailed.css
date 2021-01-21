@@ -1,3 +1,6 @@
+html {
+	scroll-behavior: smooth;
+  }
 /*SIMILAR MOVIES EDIT*/
 .movie-single-properties span{
 	color:white !important;
@@ -85,7 +88,7 @@
 	justify-content: center;
 	align-items: center;
 }
-.card-left a{
+.card-left button{
 	margin:20px;
 	padding:10px;
 	border:none;
@@ -94,8 +97,9 @@
 	font-family: "BPG Web 001";
 	background: #223b53;
 	transition: 1s ease;
+	cursor: pointer;
 }
-.card-left a:hover{
+.card-left button:hover{
 	transition: 1s ease;
 	background: linear-gradient(to top, rgb(34,59,83,0.9), rgb(25,81,144,0.6));
 }
